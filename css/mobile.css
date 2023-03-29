@@ -1,0 +1,28 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .qualite-div-icon {
+    display: none;
+  }
+  .quality-subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+  }
+  .qualite-description {
+    font-weight: 500;
+  }
+  .quality-list {
+    width: 100%;
+  }
+
+  .work {
+    display: none;
+  }
+  .container-sm {
+    max-width: 294px;
+  }
+}

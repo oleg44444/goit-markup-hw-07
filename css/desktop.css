@@ -1,0 +1,48 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .quality {
+    padding: 120px 0;
+  }
+  .qualite-div-icon {
+    display: flex;
+  }
+
+  .quality-subtitle {
+    text-align: start;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .qualite-description {
+    font-weight: 400;
+  }
+  .quality-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .qualite-item {
+    width: 264px;
+  }
+  .work {
+    display: block;
+  }
+  .team {
+    padding: var(--section-padding);
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100%-72px) / 4);
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

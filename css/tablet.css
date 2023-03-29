@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .quality {
+    padding: 96px 0;
+  }
+  .qualite-div-icon {
+    display: none;
+  }
+  .quality-subtitle {
+    text-align: start;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+  }
+  .qualite-description {
+    font-weight: 500;
+  }
+  .qualite-item {
+    width: 356px;
+  }
+  .quality-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .work {
+    display: none;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+}

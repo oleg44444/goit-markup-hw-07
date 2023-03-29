@@ -14,6 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.02em;
   font-size: 16px;
+  min-width: 320px;
 }
 h1,
 h2,
@@ -39,9 +40,9 @@ button {
   padding-left: 0;
 }
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -188,14 +189,24 @@ button {
 
 /* Quality */
 .quality {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .quality-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  width: 100%;
+}
+.qualite-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
+.qualite-div-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -209,33 +220,24 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.qualite-item {
-  width: 264px;
-}
-.qualite-div-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  height: 112px;
-  margin-bottom: 8px;
-
-  background-color: #f4f4fd;
-}
 
 .quality-subtitle {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
 }
+
 .qualite-description {
   color: var(--title-text-color);
+
+  font-weight: 500;
 
   line-height: 1.5;
 }
 /* what are we doing */
 .work {
+  display: none;
   padding-bottom: 120px;
 }
 .work-list {
@@ -262,9 +264,10 @@ button {
 /* Our Team */
 .team {
   background-color: var(--light-mode-backgrounds);
-  padding: var(--section-padding);
+  padding: 96px 0;
   text-align: center;
 }
+
 .team-title {
   margin-bottom: 72px;
   font-weight: 700;
@@ -273,13 +276,16 @@ button {
 
   text-transform: capitalize;
 }
+.container-sm {
+  max-width: 294px;
+}
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .team-item {
-  width: calc((100%-72px) / 4);
-
+  /* width: 100%; */
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -328,8 +334,8 @@ button {
 }
 /* Custoners */
 .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   text-align: center;
 }
 .customers-title {
