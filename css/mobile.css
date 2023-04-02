@@ -2,7 +2,16 @@
   .container {
     max-width: 480px;
   }
+  .hero-title {
+    font-size: 36px;
+  }
 
+  .mob-social-list {
+    gap: 45px;
+  }
+  .mob-contacts-phone {
+    font-size: 36px;
+  }
   .qualite-div-icon {
     display: none;
   }
@@ -24,5 +33,8 @@
   }
   .container-sm {
     max-width: 294px;
+  }
+  .modal {
+    max-width: 392px;
   }
 }

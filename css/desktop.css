@@ -2,6 +2,44 @@
   .container {
     max-width: 1158px;
   }
+  .address-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .address-list {
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .header-list {
+    margin-left: 76px;
+  }
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    height: 600px;
+  }
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-desk-1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-desk-2x.jpg);
+    }
+  }
+
   .quality {
     padding: 120px 0;
   }
@@ -44,5 +82,31 @@
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .customer-list {
+    display: flex;
+    gap: 24px;
+  }
+  .footer {
+    background-color: var(--primary-text-color);
+    padding: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+  }
+  .subscribe {
+    width: auto;
+  }
+  .footer-text {
+    margin-right: 120px;
+  }
+  .social-media {
+    margin-right: 80px;
+  }
+  .footer-content {
+    width: 100%;
+    gap: 0;
+    flex-wrap: nowrap;
   }
 }
