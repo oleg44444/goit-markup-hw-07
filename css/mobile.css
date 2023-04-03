@@ -34,7 +34,11 @@
   .container-sm {
     max-width: 294px;
   }
-  .modal {
-    max-width: 392px;
+
+  .mob-social-list {
+    gap: 45px;
+  }
+  .mob-contacts-phone {
+    font-size: 36px;
   }
 }

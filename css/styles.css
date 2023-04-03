@@ -129,16 +129,13 @@ button {
 }
 /* MENU */
 
-.menu-button .icon-menu {
+.menu-button {
   fill: #2e2f42;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: 0;
   background-color: transparent;
-  position: absolute;
-  top: 24px;
-  right: 16px;
 }
 .menu-button .icon-close {
   display: none;
@@ -189,7 +186,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: auto;
+
   align-items: flex-start;
 }
 .mob-menu.is-open {
@@ -202,26 +199,31 @@ button {
   gap: 40px;
   flex-direction: column;
   margin-left: 40px;
-  margin-top: 80px;
-  margin-bottom: 284px;
+  margin-top: 10px;
+  margin-bottom: auto;
 }
 .contacts-item:not(:last-child) {
   margin-bottom: 40px;
 }
 .mob-social-list {
+  margin-left: 40px;
   margin-top: 48px;
   display: flex;
-  gap: 45px;
+  gap: 35px;
 }
 .social-list-link {
   width: 40px;
   height: 40px;
 }
+.mob-adress-list {
+  margin-left: 40px;
+  margin-top: 40px;
+}
 .mob-contacts-phone {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #434455;
@@ -253,7 +255,7 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11px;
+  line-height: 1.11;
   text-transform: capitalize;
   color: #4d5ae5;
 }
@@ -265,7 +267,9 @@ button {
 .hero {
   background-color: var(--primary-text-color);
   text-align: center;
-  padding: 112px 0;
+  padding: 96px 0;
+  max-width: 428px;
+  height: 432px;
 
   margin: 0 auto;
   background-image: linear-gradient(
@@ -326,8 +330,10 @@ button {
 .quality-list {
   width: 100%;
 }
-.qualite-item:not(:last-child) {
-  margin-bottom: 72px;
+@media screen and (max-width: 768px) {
+  .qualite-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 .qualite-div-icon {
@@ -358,6 +364,7 @@ button {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  margin-bottom: 8px;
 }
 
 .qualite-description {
@@ -764,10 +771,11 @@ button {
   pointer-events: none;
 }
 .modal {
-  width: calc(100% - 2 * 15px);
-
+  width: 95%;
+  max-width: 392px;
+  overflow: scroll;
   max-height: 586px;
-  height: 90%;
+  height: 95%;
 
   border-radius: 4px;
   background-color: #ffffff;
